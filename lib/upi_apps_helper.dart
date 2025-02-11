@@ -196,7 +196,7 @@ class UpiAppsHelper {
       case _AllUpiApps.paywiz:
         return 'com.idbibank.paywiz';
       case _AllUpiApps.payZapp:
-        return "com.enstage.wibmo.hdfc";
+        return "com.hdfcbank.payzapp";
       case _AllUpiApps.phonePe:
         return 'com.phonepe.app';
       case _AllUpiApps.pnb:
