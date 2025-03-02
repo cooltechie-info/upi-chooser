@@ -1,3 +1,7 @@
+## 0.0.7
+
+* Latest version support.
+
 ## 0.0.6
 
 * Errors are handled properly.

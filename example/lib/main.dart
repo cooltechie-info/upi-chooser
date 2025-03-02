@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: InkWell(
-                        onTap: () async {                    
+                        onTap: () async {
                           upiChooser.launchUpiChooser(
                             Platform.isIOS
                                 ? upiAppsData![index].scheme!

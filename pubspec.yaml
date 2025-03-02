@@ -1,6 +1,6 @@
 name: upi_chooser
 description: Flutter plugin to get the list of UPI apps that are installed on the device.
-version: 0.0.6
+version: 0.0.7
 repository: https://github.com/cooltechie-info/upi-chooser
 screenshots:
   - description: 'UPI App list'
@@ -13,9 +13,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
-  url_launcher: ^6.1.5
-  appcheck: ^1.0.6
+  plugin_platform_interface: ^2.1.8
+  url_launcher: ^6.2.4
+  appcheck: ^1.1.0
 
 dev_dependencies:
   flutter_test:

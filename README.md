@@ -9,7 +9,7 @@ Note: This plugin only lists the available Apps, doesn't get transaction respons
 1. Add the dependency.
 
 ```yml
-upi_chooser: ^0.0.6
+upi_chooser: ^0.0.7
 ```
 
 2. Import the package.

@@ -110,13 +110,15 @@ class UpiChooser {
 
   List<UpiApps> upiAppsMapList = [];
 
+  AppCheck appCheck = AppCheck();
+
   Future<List<UpiApps>> getUpiAppList({String? pkgName}) async {
     try {
       upiAppsMapList.clear();
       if (Platform.isAndroid) {
         for (int i = 0; i < androidApps.length; i++) {
           try {
-            await AppCheck.checkAvailability(androidApps[i].packageName).then(
+            await appCheck.checkAvailability(androidApps[i].packageName).then(
               (app) {
                 debugPrint(app.toString());
                 debugPrint('upiAndroidIcons[i]: ${upiAndroidIcons[i]}');
@@ -140,7 +142,7 @@ class UpiChooser {
       } else {
         for (int i = 0; i < iOSApps.length; i++) {
           try {
-            await AppCheck.checkAvailability(iOSApps[i].packageName).then(
+            await appCheck.checkAvailability(iOSApps[i].packageName).then(
               (app) {
                 debugPrint(app.toString());
                 upiAppsMapList.add(
